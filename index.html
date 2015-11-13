@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+<link rel="apple-touch-icon" sizes="114x114" href="images/icontwo.png">
+<link rel="apple-touch-startup-image" href="images/startup.png" />
+<title>知来</title>
+
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/buttons.css" rel="stylesheet" type="text/css">
+<link href="css/type.css" rel="stylesheet" type="text/css">
+<link href="css/add2home.css" rel="stylesheet" type="text/css">
+<link href="css/flexslider.css" rel="stylesheet" type="text/css">
+<link href="css/photoswipe.css" rel="stylesheet" type="text/css">
+
+<!-- Do not move the bellow script to custom.js! It must stay here to load properly! -->
+<script type="text/javascript">
+	function loadImages() {
+		if (document.getElementById) {  // DOM3 = IE5, NS6
+			document.getElementById('hidepage').style.visibility = 'hidden';
+		}else {
+		if (document.layers) {  // Netscape 4
+			document.hidepage.visibility = 'hidden';
+		}else {  // IE 4
+			document.all.hidepage.style.visibility = 'hidden';
+		  }
+	   }
+	}
+</script>
+<script type="text/javasript">
+    function clickJump(){
+//        if (document.getElmentById){
+//           document.getElementById('nextpage').addEventListener("click",clickJump);
+        window.location.assign("recommond.html");
+    }
+</script>
+
+<script type="text/javascript" src="scripts/jquery.js"></script>
+<!--script type="text/javascript" src="<scripts/jquery.lazyload.js"></script-->
+<script type="text/javascript" src="scripts/contact.js"></script>
+<script type="text/javascript" src="scripts/jquery.flexslider-min.js"/></script>
+<!--script type="text/javascript" src="scripts/tweetable.js"></script-->
+<script type="text/javascript" src="scripts/add2home.js"></script>
+<!--script type="text/javascript" src="scripts/jquery.nivo.slider.pack.html"></script-->
+<script type="text/javascript" src="scripts/klass.min.js"></script>
+<script type="text/javascript" src="scripts/code.photoswipe.jquery-3.0.4.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</head>
+
+<body OnLoad="loadImages()">
+    <p class="no-mobile">请用手机访问网页哦! <br /><img src="images/background/wximg.jpg" alt="img"></p>
+
+    <div class="site">
+
+        <div id="hidepage"> 
+            <!--p class="center-text">Loading depends on mobile bandwidth speed!<br/><img src="images/background/130.gif" alt="load"></p-->
+            <p class="center-text">正在拼命加载中...<br/><img src="images/background/130.gif" alt="load"></p>
+        </div>
+
+        <div class="navigation">
+            <a id="home" class="selected" href="#"><img src="images/nav/item1ns.png" alt="img"><em class="under-icon-text">首页</em></a>
+            <a id="about" 		  	      href="#"><img src="images/nav/item2ns.png" alt="img"><em class="under-icon-text">关于我们</em></a>
+            <a id="portfolio" 	  		  href="#"><img src="images/nav/item3ns.png" alt="img"><em class="under-icon-text">项目介绍</em></a>
+            <a id="blog" 		  	      href="#"><img src="images/nav/item5ns.png" alt="img"><em class="under-icon-text">大家说</em></a>
+            <a id="contact" 	  		  href="#"><img src="images/nav/item4ns.png" alt="img"><em class="under-icon-text">联系我们</em></a>
+        </div>
+
+        <div class="header-deco"></div>
+
+        <div class="header">
+            <!--img class="logo" src="images/logo.png" alt="img"--> 
+            <div class="social-icons">
+                <a href="#"><img src="images/social-icons/facebook.png" alt="img"></a>
+                <a href="#"><img src="images/social-icons/twitter.png" alt="img"></a>
+                <a href="#"><img src="images/social-icons/rss.png" alt="img"></a>
+                <a href="#"><img src="images/social-icons/mail.png" alt="img"></a>
+            </div>
+        </div>
+
+        <div class="decoration"></div>
+
+        <div class="home">
+            <div class="flexslider">
+                <ul class="slides">
+                    <li>
+                        <img src="images/slider/1.jpg" />
+                        <p class="flex-caption">左右滑动图片</p>
+                    </li>
+                    <li>
+                        <img src="images/slider/2.jpg" />
+                        <p class="flex-caption">项目标题</p>
+                    </li>
+                    <li>
+                        <img src="images/slider/3.jpg" />
+                        <p class="flex-caption">项目标题</p>
+                    </li>
+                    <li>
+                        <img src="images/slider/4.jpg" />
+                        <p class="flex-caption">项目标题</p>
+                    </li>
+                </ul>
+            </div>
+            <!--p class="under-slider-heading shadow">极数知来!</p-->
+            <button class="jump" onclick="window.location.assign('recommond.html')">极数知来</button>
+            <button class="jump" onclick="window.location.href('www.baidu.com')">极数知来</button>
+            <!--input type="button" value="极数知来" onclick="clickJump()"-->
+            <p class="under-slider-description shadow">
+                我是神龟博士，以后都是我来和您线上沟通，多指教！
+            </p>
+            <div class="decoration"></div>
+        </div>
+
+        <div class="about">
+            <div class="column">
+                <img class="image-width image-deco" src="images/about-images/1.jpg" alt="img">
+                <!--h4 class="image-heading shadow">An awesome image maybe?</h4-->
+                <h4 class="image-heading shadow">极数知来</h4>
+                <p class="shadow">            
+                  股权投资协作网络，专注于通过人工+智能（神龟博士）和
+                  移动互联网提高股权投资判断力和协作水平。
+                </p>
+                <div class="clear"></div>
+            </div>
+            <div class="decoration"></div>
+        </div>
+
+        <div class="portfolio"> 
+            <div class="full-width">
+                <h4 class="shadow">项目列表</h4>
+                <p class="shadow">
+                  点击图片查看项目详情
+                </p>
+            </div>
+
+            <div class="decoration"></div>
+
+            <ul id="gallery" class="gallery">
+                <li><a href="images/swype/full/001.jpg">
+                    <img src="images/swype/thumb/001.jpg" alt="Caption Title One" />
+                </a></li>
+                <li><a href="images/swype/full/002.jpg">
+                    <img src="images/swype/thumb/002.jpg" alt="Caption Title Two" />
+                </a></li>
+                <li><a href="images/swype/full/003.jpg">
+                    <img src="images/swype/thumb/003.jpg" alt="Caption Title Three" />
+                </a></li>
+            </ul>
+
+            <div class="decoration"></div>
+        </div>
+
+        <div class="blog">
+            <div class="blog-post">
+                <img class="image-deco image-width" src="images/about-images/1.jpg" alt="img">
+                <ul class="blog-post-details">
+                    <li class="posted-by">admin</li>
+                    <li class="posted-at">02/11/2015</li>
+                    <li class="posted-in">CSS, HTML</li>
+                    <li class="posted-mo"><a href="#">More</a></li>
+                </ul>   
+                <div class="clear"></div>
+                <p class="shadow">
+                </p>
+            </div>
+
+            <div class="decoration"></div>
+
+            <div class="blog-post">
+                <img class="image-deco image-width" src="images/about-images/2.jpg" alt="img">
+                <ul class="blog-post-details">
+                    <li class="posted-by">admin</li>
+                    <li class="posted-at">02/11/2015</li>
+                    <li class="posted-in">CSS, HTML</li>
+                    <li class="posted-mo"><a href="#">More</a></li>
+                </ul>   
+                <div class="clear"></div>
+                <p class="shadow">
+                  我喜欢这个项目。。。
+                </p> 
+            </div>
+
+            <div class="decoration"></div>
+        </div>
+
+        <div class="contact">
+            <div class="full-width">
+                <h4 class="shadow">加入联盟</h4>
+                <p class="shadow">
+                     查看得票三甲项目详细资料
+                     推荐项目优先参与每周投票 
+                </p>
+            </div>
+
+            <form id="contactForm">
+                <div class="decoration"></div>
+                <fieldset>
+                    <label for="contactName" id="name_label">姓名*</label>
+                    <input type="text" name="contactName" id="contactName" size="30" value="" class="text-input" />
+                    <span class="error" id="nameError">请输入您的姓名</span>
+                    <label for="contactEmail" id="email_label">邮件*</label>
+                    <input type="text" name="contactEmail" id="contactEmail" size="30" value="" class="text-input" />
+                    <span class="error" id="emailError">请输入您的邮箱</span> 
+                    <span class="error" id="emailError2">请输入一个有效的地址</span>
+                    <label for="contactMessage" id="message_label">留言</label>
+                    <textarea  name="contactMessage" id="contactMessage" class="text-input"></textarea>
+                    <span class="error" id="messageError">请输入您的信息</span>
+                    <p>
+                        <input type="submit" name="submitMessage" class="contactButton button grey" id="contactSubmitBtn" value="提交"/>
+                    </p>
+                </fieldset>
+            </form>
+            <div class="decoration"></div>
+        </div>
+
+
+        <div class="empty-clear-menu"></div>
+        <div class="footer_placeholder"></div>
+    </div>
+    <!--div class="footer">
+        <div id="tweets"></div>
+        <p class="copyright">&copy; Copyright 2012. All rights reserved. <a href="#">Terms Of Service</a></p>
+    </div-->
+    <div class="footer">
+        <p class="copyright">&copy; Copyright 2012. All rights reserved. <br/><a href="#">Terms Of Service</a></p>
+    </div>
+</body>
+</html>
